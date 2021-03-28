@@ -105,6 +105,9 @@
   flex-direction: column;
   position: relative;
 }
+.primary .main .profileMain .profileMainBody::-webkit-scrollbar {
+  display: none;
+}
 .primary .main .profileMain .profileMainBody {
   overflow-y: scroll;
 }
@@ -116,15 +119,20 @@
   display: flex;
   justify-content: space-between;
 }
-.primary .main .profileMain .profileMainBody .arrow {
+.primary .main .profileMain .profileMainBody .buttonNav .arrow {
   margin-left: 5px;
+  z-index: 10;
 }
-.primary .main .profileMain .profileMainBody .tripleDot {
+.primary .main .profileMain .profileMainBody .buttonNav .tripleDot {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-right: 5px;
+  z-index: 10;
+}
+.primary .main .profileMain .profileMainBody .photos::-webkit-scrollbar {
+  display: none;
 }
 .primary .main .profileMain .profileMainBody .photos {
   position: relative;
