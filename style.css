@@ -41,7 +41,7 @@
 }
 .primary .main .profile .profile {
   margin: 0 24px 40px 24px;
-  background: url("/src/img/john_wick_chapter_three_ver2.png") center no-repeat;
+  background: url("src/img/john_wick_chapter_three_ver2.png") center no-repeat;
   background-size: cover;
   width: 366px;
   height: 622px;
