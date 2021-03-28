@@ -9,6 +9,7 @@
 .primary .main {
   display: flex;
   font-family: 'Cinzel Decorative', cursive;
+  font-family: sans-serif;
   margin: 0 -20px;
 }
 .primary .main > * {
@@ -39,7 +40,7 @@
   text-align: center;
   color: #4E4B6F;
 }
-.primary .main .profile .profile {
+.primary .main .profile .profile_tab {
   margin: 0 24px 40px 24px;
   background: url("images/john_wick_chapter_three_ver2.png") center no-repeat;
   background-size: cover;
@@ -48,7 +49,7 @@
   border-radius: 24px;
   position: relative;
 }
-.primary .main .profile .profile .descr {
+.primary .main .profile .profile_tab .descr {
   position: absolute;
   bottom: 32px;
   right: 0;
@@ -58,7 +59,7 @@
   border-radius: 20px 0 0 20px;
   padding: 24px;
 }
-.primary .main .profile .profile .descr .name {
+.primary .main .profile .profile_tab .descr .name {
   font-family: 'Cinzel Decorative', cursive;
   font-weight: 600;
   font-size: 24px;
@@ -66,7 +67,31 @@
   color: #16123D;
   padding-bottom: 8px;
 }
-.primary .main .profile .profile .descr .prof {
+.primary .main .profile .profile_tab .descr .prof {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4E4B6F;
+}
+.primary .main .profile .descr {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  left: 24px;
+  background: #FFFFFF;
+  opacity: 0.9;
+  border-radius: 20px 0 0 20px;
+  padding: 24px;
+}
+.primary .main .profile .descr .name {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #16123D;
+  padding-bottom: 8px;
+}
+.primary .main .profile .descr .prof {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 16px;
   line-height: 19px;
@@ -80,33 +105,36 @@
   flex-direction: column;
   position: relative;
 }
+.primary .main .profileMain .profileMainBody {
+  overflow-y: scroll;
+}
 .primary .main .profileMain .profileMainBody .buttonNav {
   position: absolute;
   margin: 0 24px 0 24px;
   width: 366px;
-  top: 61px;
+  top: 56px;
   display: flex;
   justify-content: space-between;
 }
 .primary .main .profileMain .profileMainBody .arrow {
   margin-left: 5px;
 }
-.primary .main .profileMain .profileMainBody .tripledot {
+.primary .main .profileMain .profileMainBody .tripleDot {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-right: 5px;
 }
-.primary .main .profileMain .profileMainBody .photo {
-  position: relative;
+.primary .main .profileMain .profileMainBody .photos {
   width: 390px;
   height: 412px;
   display: flex;
   margin-left: 24px;
   border-radius: 0 0 0 24px;
+  overflow-x: scroll;
 }
-.primary .main .profileMain .profileMainBody .photo .primarySidebar {
+.primary .main .profileMain .profileMainBody .photos .primarySidebar {
   position: absolute;
   top: 382px;
   left: 266px;
@@ -116,7 +144,7 @@
   background: rgba(0, 0, 0, 0.3);
   border-radius: 50px;
 }
-.primary .main .profileMain .profileMainBody .photo .primarySidebar .secondarySidebar {
+.primary .main .profileMain .profileMainBody .photos .primarySidebar .secondarySidebar {
   margin-left: 20px;
   width: 20px;
   height: 6px;
@@ -154,6 +182,7 @@
   color: #4E4B6F;
 }
 .primary .main .profileMain .profileMainBody .info .distance {
+  font-family: 'Cinzel Decorative', cursive;
   padding-top: 8px;
   font-style: normal;
   font-weight: normal;
@@ -174,8 +203,8 @@
   color: #4E4B6F;
 }
 .primary .main .profileMain .profileMainBody .aboutInfo .greetings {
-  padding-top: 12px;
   font-family: 'Dancing Script', cursive;
+  padding-top: 12px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -196,7 +225,6 @@
   color: #4E4B6F;
 }
 .primary .main .profileMain .profileMainBody .interests .tags {
-  font-family: 'Cinzel Decorative', cursive;
   padding-top: 14px;
   display: flex;
   flex-wrap: wrap;
@@ -293,6 +321,7 @@
   margin: 36px 24px 0 24px;
 }
 .primary .main .profileMain .profileMainBody .instagramPhoto .title {
+  font-family: 'Cinzel Decorative', cursive;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
